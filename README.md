@@ -1,6 +1,6 @@
 # fantasy-soccer-demo
 
-This is code to create sample data for a mini fantasy soccer game.
+This code creates sample data for a mini fantasy soccer game.
 
 For the purpose of this demo, teams will consist of 7 players, a typical selection would include 1 goalkeeper, 4 outfield players and 2 substitutes. We will also assign random points to each game player each game week. To model this game, we used three tables; Gamers, Soccer_Players and Gamer_Teams. 
 
