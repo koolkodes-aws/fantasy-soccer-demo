@@ -36,9 +36,10 @@ n = input("Enter Game Week you want to randomize scores in Soccer Players Table:
 
 type(n)
 
-GW=int(n)
-
-GWStr="GW-"+ n
+if int(n) <= 9:
+    GWStr="GW-0"+ n
+else:
+    GWStr="GW-"+ n
 
 
 for player_id in player_ids:

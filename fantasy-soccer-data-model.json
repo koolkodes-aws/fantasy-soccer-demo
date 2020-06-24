@@ -1,0 +1,1024 @@
+{
+  "ModelName": "fantasy-soccer-demo",
+  "ModelMetadata": {
+    "Author": "Kehinde Otubamowo",
+    "DateCreated": "May 30, 2020, 03:36 PM",
+    "DateLastModified": "Jun 17, 2020, 02:35 PM",
+    "Description": "Scalable Data Model for Fantasy Soccer League",
+    "Version": "1.0"
+  },
+  "DataModel": [
+    {
+      "TableName": "Gamer_Teams",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "Gamer_ID",
+          "AttributeType": "S"
+        },
+        "SortKey": {
+          "AttributeName": "Game_Week",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "GW_Team",
+          "AttributeType": "M"
+        }
+      ],
+      "TableData": [
+        {
+          "Gamer_ID": {
+            "S": "Taiwo12345"
+          },
+          "Game_Week": {
+            "S": "GW-01"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Aguero#10"
+              },
+              "GoalKeeper": {
+                "S": "De-Gea#1"
+              },
+              "Players": {
+                "SS": [
+                  "Auba#14",
+                  "Pedro#17",
+                  "Van-Dijk#5"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Maguire#5",
+                  "Cantwell#14"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Kehinde89999"
+          },
+          "Game_Week": {
+            "S": "GW-01"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Salah#11"
+              },
+              "GoalKeeper": {
+                "S": "Pickford#1"
+              },
+              "Players": {
+                "SS": [
+                  "Sterling#7",
+                  "Cantwell#14",
+                  "Rashford#10"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Stones#6",
+                  "Pedro#17"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Zee000000"
+          },
+          "Game_Week": {
+            "S": "GW-01"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Sterling#7"
+              },
+              "GoalKeeper": {
+                "S": "Pickford#1"
+              },
+              "Players": {
+                "SS": [
+                  "Salah#11",
+                  "Cantwell#14",
+                  "Rashford#10"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Stones#6",
+                  "Pedro#17"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Tito12121"
+          },
+          "Game_Week": {
+            "S": "GW-01"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Aguero#10"
+              },
+              "GoalKeeper": {
+                "S": "Pickford#1"
+              },
+              "Players": {
+                "SS": [
+                  "Auba#14",
+                  "Pedro#17",
+                  "Van-Dijk#5"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Maguire#5",
+                  "Cantwell#14"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Timi555555"
+          },
+          "Game_Week": {
+            "S": "GW-01"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Auba#14"
+              },
+              "GoalKeeper": {
+                "S": "De-Gea#1"
+              },
+              "Players": {
+                "SS": [
+                  "Aguero#10",
+                  "Pedro#17",
+                  "Van-Dijk#5"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Maguire#5",
+                  "Cantwell#14"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Taiwo12345"
+          },
+          "Game_Week": {
+            "S": "GW-02"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Aguero#10"
+              },
+              "GoalKeeper": {
+                "S": "De-Gea#1"
+              },
+              "Players": {
+                "SS": [
+                  "Auba#14",
+                  "Pedro#17",
+                  "Van-Dijk#5"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Maguire#5",
+                  "Cantwell#14"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Kehinde89999"
+          },
+          "Game_Week": {
+            "S": "GW-02"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Salah#11"
+              },
+              "GoalKeeper": {
+                "S": "Pickford#1"
+              },
+              "Players": {
+                "SS": [
+                  "Sterling#7",
+                  "Cantwell#14",
+                  "Rashford#10"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Stones#6",
+                  "Pedro#17"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Zee000000"
+          },
+          "Game_Week": {
+            "S": "GW-02"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Sterling#7"
+              },
+              "GoalKeeper": {
+                "S": "Pickford#1"
+              },
+              "Players": {
+                "SS": [
+                  "Salah#11",
+                  "Cantwell#14",
+                  "Rashford#10"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Stones#6",
+                  "Pedro#17"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Tito12121"
+          },
+          "Game_Week": {
+            "S": "GW-02"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Aguero#10"
+              },
+              "GoalKeeper": {
+                "S": "Pickford#1"
+              },
+              "Players": {
+                "SS": [
+                  "Auba#14",
+                  "Pedro#17",
+                  "Van-Dijk#5"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Maguire#5",
+                  "Cantwell#14"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Timi55555"
+          },
+          "Game_Week": {
+            "S": "GW-02"
+          },
+          "GW_Team": {
+            "M": {
+              "Captain": {
+                "S": "Aguero#10"
+              },
+              "GoalKeeper": {
+                "S": "Pickford#1"
+              },
+              "Players": {
+                "SS": [
+                  "Auba#14",
+                  "Pedro#17",
+                  "Van-Dijk#5"
+                ]
+              },
+              "Subs": {
+                "SS": [
+                  "Maguire#5",
+                  "Cantwell#14"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    },
+    {
+      "TableName": "Soccer_Players",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "Player_ID",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "Player_Profile",
+          "AttributeType": "M"
+        },
+        {
+          "AttributeName": "Game_Week_Scores",
+          "AttributeType": "M"
+        }
+      ],
+      "TableData": [
+        {
+          "Player_ID": {
+            "S": "Aguero#10"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Striker"
+              },
+              "Creativity": {
+                "N": "80"
+              },
+              "Speed": {
+                "N": "85"
+              },
+              "Stamina": {
+                "N": "95"
+              },
+              "Threat": {
+                "N": "95"
+              },
+              "Tackle": {
+                "N": "70"
+              },
+              "Price": {
+                "N": "13"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "18"
+              },
+              "GW-02": {
+                "N": "25"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Auba#14"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Striker"
+              },
+              "Creativity": {
+                "N": "80"
+              },
+              "Speed": {
+                "N": "90"
+              },
+              "Stamina": {
+                "N": "85"
+              },
+              "Threat": {
+                "N": "95"
+              },
+              "Tackle": {
+                "N": "70"
+              },
+              "Price": {
+                "N": "12"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "2"
+              },
+              "GW-02": {
+                "N": "15"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Pedro#17"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Midfielder"
+              },
+              "Creativity": {
+                "N": "85"
+              },
+              "Speed": {
+                "N": "85"
+              },
+              "Stamina": {
+                "N": "85"
+              },
+              "Threat": {
+                "N": "90"
+              },
+              "Tackle": {
+                "N": "70"
+              },
+              "Price": {
+                "N": "6.5"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "20"
+              },
+              "GW-02": {
+                "N": "13"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Van-Dijk#4"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Defender"
+              },
+              "Creativity": {
+                "N": "75"
+              },
+              "Speed": {
+                "N": "70"
+              },
+              "Stamina": {
+                "N": "95"
+              },
+              "Threat": {
+                "N": "75"
+              },
+              "Tackle": {
+                "N": "95"
+              },
+              "Price": {
+                "N": "9.5"
+              },
+              "Form ": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "11"
+              },
+              "GW-02": {
+                "N": "25"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Stones#5"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Defender"
+              },
+              "Creativity": {
+                "N": "80"
+              },
+              "Speed": {
+                "N": "70"
+              },
+              "Stamina": {
+                "N": "90"
+              },
+              "Threat": {
+                "N": "75"
+              },
+              "Tackle": {
+                "N": "95"
+              },
+              "Price": {
+                "N": "8.5"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "10"
+              },
+              "GW-02": {
+                "N": "5"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Cantwell#14"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Midfielder"
+              },
+              "Creativity": {
+                "N": "80"
+              },
+              "Speed": {
+                "N": "85"
+              },
+              "Stamina": {
+                "N": "80"
+              },
+              "Threat": {
+                "N": "90"
+              },
+              "Tackle": {
+                "N": "70"
+              },
+              "Price": {
+                "N": "6.5"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "3"
+              },
+              "GW-02": {
+                "N": "14"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Maguire#5"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Defender"
+              },
+              "Creativity": {
+                "N": "75"
+              },
+              "Speed": {
+                "N": "70"
+              },
+              "Stamina": {
+                "N": "95"
+              },
+              "Threat": {
+                "N": "75"
+              },
+              "Tackle": {
+                "N": "90"
+              },
+              "Price": {
+                "N": "7.5"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "20"
+              },
+              "GW-02": {
+                "N": "25"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Salah#11"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Midfielder"
+              },
+              "Creativity": {
+                "N": "85"
+              },
+              "Speed": {
+                "N": "92"
+              },
+              "Stamina": {
+                "N": "90"
+              },
+              "Threat": {
+                "N": "90"
+              },
+              "Tackle": {
+                "N": "70"
+              },
+              "Price": {
+                "N": "13.5"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "26"
+              },
+              "GW-02": {
+                "N": "4"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Sterling#7"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Midfielder"
+              },
+              "Creativity": {
+                "N": "85"
+              },
+              "Stamina": {
+                "N": "80"
+              },
+              "Speed": {
+                "N": "92"
+              },
+              "Threat": {
+                "N": "90"
+              },
+              "Tackle": {
+                "N": "70"
+              },
+              "Price": {
+                "N": "13.5"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "12"
+              },
+              "GW-02": {
+                "N": "22"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Rashford#10"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Striker"
+              },
+              "Creativity": {
+                "N": "75"
+              },
+              "Speed": {
+                "N": "95"
+              },
+              "Stamina": {
+                "N": "90"
+              },
+              "Threat": {
+                "N": "90"
+              },
+              "Tackle": {
+                "N": "70"
+              },
+              "Price": {
+                "N": "11"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "20"
+              },
+              "GW-02": {
+                "N": "25"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "De-Gea#1"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Goalie"
+              },
+              "Creativity": {
+                "N": "65"
+              },
+              "Speed": {
+                "N": "60"
+              },
+              "Stamina": {
+                "N": "95"
+              },
+              "Threat": {
+                "N": "45"
+              },
+              "Tackle": {
+                "N": "90"
+              },
+              "Price": {
+                "N": "8"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "18"
+              },
+              "GW-02": {
+                "N": "6"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Pickford#1"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Goalie"
+              },
+              "Creativity": {
+                "N": "60"
+              },
+              "Speed": {
+                "N": "60"
+              },
+              "Stamina": {
+                "N": "90"
+              },
+              "Threat": {
+                "N": "65"
+              },
+              "Tackle": {
+                "N": "90"
+              },
+              "Price": {
+                "N": "6.5"
+              },
+              "Form": {
+                "N": "6.5"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "8"
+              },
+              "GW-02": {
+                "N": "18"
+              }
+            }
+          }
+        },
+        {
+          "Player_ID": {
+            "S": "Foster#1"
+          },
+          "Player_Profile": {
+            "M": {
+              "Position": {
+                "S": "Goalie"
+              },
+              "Creativity": {
+                "N": "50"
+              },
+              "Speed": {
+                "N": "55"
+              },
+              "Stamina": {
+                "N": "90"
+              },
+              "Threat": {
+                "N": "60"
+              },
+              "Tackle": {
+                "N": "90"
+              },
+              "Price": {
+                "N": "5.5"
+              },
+              "Form": {
+                "N": "6.0"
+              }
+            }
+          },
+          "Game_Week_Scores": {
+            "M": {
+              "GW-01": {
+                "N": "8"
+              },
+              "GW-02": {
+                "N": "18"
+              }
+            }
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    },
+    {
+      "TableName": "Gamers",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "Gamer_ID",
+          "AttributeType": "S"
+        }
+      },
+      "NonKeyAttributes": [
+        {
+          "AttributeName": "Gamer_Details",
+          "AttributeType": "M"
+        }
+      ],
+      "TableData": [
+        {
+          "Gamer_ID": {
+            "S": "Taiwo12345"
+          },
+          "Gamer_Details": {
+            "M": {
+              "Age": {
+                "N": "49"
+              },
+              "Country": {
+                "S": "India"
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Kehinde89999"
+          },
+          "Gamer_Details": {
+            "M": {
+              "Age": {
+                "N": "38"
+              },
+              "Country": {
+                "S": "Brazil"
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Zee000000"
+          },
+          "Gamer_Details": {
+            "M": {
+              "Age": {
+                "N": "49"
+              },
+              "Country": {
+                "S": "South Africa"
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Tito12121"
+          },
+          "Gamer_Details": {
+            "M": {
+              "Age": {
+                "N": "38"
+              },
+              "Country": {
+                "S": "UK"
+              }
+            }
+          }
+        },
+        {
+          "Gamer_ID": {
+            "S": "Timi55555"
+          },
+          "Gamer_Details": {
+            "M": {
+              "Age": {
+                "N": "58"
+              },
+              "Country": {
+                "S": "USA"
+              }
+            }
+          }
+        }
+      ],
+      "DataAccess": {
+        "MySql": {}
+      }
+    }
+  ]
+}
