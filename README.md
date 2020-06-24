@@ -33,78 +33,22 @@ Please refer following guide for more details on Boto 3 installation: https://bo
 Please note that you may need to follow additional setup steps for using Boto 3 from an IDE. Refer your IDE's documentation if you run into issues.
 
 ## Steps to generate sample data:
-1. Create table schema in DynamoDB:
-```json
-{
-  "DataModel": [
-    {
-      "TableName": "Gamer_Teams",
-      "KeyAttributes": {
-        "PartitionKey": {
-          "AttributeName": "Gamer_ID",
-          "AttributeType": "S"
-        },
-        "SortKey": {
-          "AttributeName": "Game_Week",
-          "AttributeType": "S"
-        }
-      },
-      "NonKeyAttributes": [
-        {
-          "AttributeName": "GW_Team",
-          "AttributeType": "M"
-        }
-      ]
-    },
-    {
-      "TableName": "Soccer_Players",
-      "KeyAttributes": {
-        "PartitionKey": {
-          "AttributeName": "Player_ID",
-          "AttributeType": "S"
-        }
-      },
-      "NonKeyAttributes": [
-        {
-          "AttributeName": "Player_Profile",
-          "AttributeType": "M"
-        },
-        {
-          "AttributeName": "Game_Week_Scores",
-          "AttributeType": "M"
-        }
-      ]
-    },
-    {
-      "TableName": "Gamers",
-      "KeyAttributes": {
-        "PartitionKey": {
-          "AttributeName": "Gamer_ID",
-          "AttributeType": "S"
-        }
-      },
-      "NonKeyAttributes": [
-        {
-          "AttributeName": "Gamer_Details",
-          "AttributeType": "M"
-        }
-      ]
-    }
-  ]
-}
-```
+1. Import json file - "fantasy-soccer-data-model.josn" to NoSQL Workbench.
 
-2. Initialize game players (Input: number of gamers)
+2. Commit data model to DynamoDB.
+!(workbench-screen-shot.jpg)
+
+3. Initialize game players (Input: number of gamers)
 ```bash
 python3 initialize_gamers.py
 ```
 
-3. Insert gameweek points for soccer players (Input: specify game week) 
+4. Insert gameweek points for soccer players (Input: specify game week) 
 ```bash
 python3 soccer-players-weekly-update.py
 ```
 
-4. Insert gameweek team selections for gamers: (Input: specify game week)
+5. Insert gameweek team selections for gamers: (Input: specify game week)
 ```bash
 python3 insert-gw-data.py
 ```
