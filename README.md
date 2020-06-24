@@ -36,7 +36,8 @@ Please note that you may need to follow additional setup steps for using Boto 3 
 1. Import json file - "fantasy-soccer-data-model.josn" to NoSQL Workbench.
 
 2. Commit data model to DynamoDB.
-!(workbench-screen-shot.jpg)
+
+![](https://github.com/koolkodes-aws/fantasy-soccer-demo/blob/master/workbench-screen-shot.jpg?raw=true)
 
 3. Initialize game players (Input: number of gamers)
 ```bash
