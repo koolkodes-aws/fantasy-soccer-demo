@@ -1,6 +1,6 @@
 # fantasy-soccer-demo
 
-This repo contains scrips to create data model for a mini fantasy soccer league game in DynamoDB and load sample data. Can be use as part of a demo / hands on lab for DynamoDB and NoSQL Workbench.
+This repo contains scripts to create data model and load sample data for a mini fantasy soccer league game in DynamoDB. Can be use as part of a demo / hands on lab for DynamoDB and NoSQL Workbench.
 
 For the purpose of this demo, each gamer will set up teams weekly that will consist of 7 players. A typical team selection would include 1 goalkeeper, 4 outfield players and 2 substitutes. We will also assign random points to each game player each game week. To model this game, we used three tables; Gamers, Soccer_Players and Gamer_Teams. 
 
